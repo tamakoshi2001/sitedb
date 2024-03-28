@@ -55,7 +55,7 @@ resource "aws_instance" "example_instance" {
               cd /home/ec2-user
               git clone https://github.com/tamakoshi2001/sitedb.git
               cd sitedb
-              sudo chown -R ec2-user:ec2-user /home/ec2-user/sitedb
+              sudo chown -R ec2-user:ec2-user /home/ec2-user/sitedb/server
               sudo -u ec2-user /usr/local/go/bin/go run main.go
               EOF
 
